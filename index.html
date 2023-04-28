@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="sass/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>Wounder Tour</title>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <!-- Header -->
+      <header class="header">
+        <!--  header top  -->
+        <div class="header__top">
+          <div class="layout header__layout">
+            <div class="header__burger" id="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="header__logo">
+              <a href="#" class="header__logo-link">Wonder Tour</a>
+            </div>
+            <ul class="header__list">
+              <li class="header__list-item">
+                <p><i class="fa-regular fa-clock"></i>09:00AM - 05:00PM</p>
+              </li>
+              <li class="header__list-item">
+                <a href="tel:+13239134488"
+                  ><i class="fa-regular fa-phone"></i>+1 323-913-4488</a
+                >
+              </li>
+              <li class="header__list-item">
+                <button class="btn header__btn">Geta Free Quote</button>
+              </li>
+            </ul>
+            <div class="header__kebab" id="kebab">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <!--   header menu   -->
+        <nav class="header__nav">
+          <div class="layout header__layout header__layout-menu">
+            <ul class="header__menu">
+              <li class="header__menu-item active">
+                <a href="#">Home</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#">About</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#">Our Team</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#">Contacts Us</a>
+              </li>
+            </ul>
+            <ul class="header__socials socials">
+              <li class="header__socials-item socials-item">
+                <a href="#" class="header__link link"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </li>
+              <li class="header__socials-item socials-item">
+                <a href="#" class="header__link link"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li class="header__socials-item socials-item">
+                <a href="#" class="header__link link"
+                  ><i class="fa-brands fa-google-plus-g"></i
+                ></a>
+              </li>
+              <li class="header__socials-item socials-item">
+                <a href="#" class="header__link link"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!--   Main   -->
+      <main>
+        <div id="content">
+          <!--    First View   -->
+          <section class="first-view">
+            <!-- Slider main container -->
+            <div class="fv-swiper swiper">
+              <!-- Additional required wrapper -->
+              <div class="fv-swiper-wrapper">
+                <!-- Slides -->
+                <div class="fv-swiper-slide">
+                  <img src="images/slider/slide1.jpg" alt="" />
+                  <div class="layout"></div>
+                </div>
+                <div class="fv-swiper-slide">
+                  <img src="images/slider/slide2.jpg" alt="" />
+                </div>
+                <div class="fv-swiper-slide">
+                  <img src="images/slider/slide3.jpg" alt="" />
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </section>
+          <!--    Tours    -->
+          <section class="tours">
+            <div class="layout tours__layout">
+              <ul class="tours__list">
+                <li class="tours__list-item">
+                  <img
+                    src="images/tours/capadocia.jpg"
+                    alt="capadocia ballons"
+                  />
+                  <p>Ballon Flights</p>
+                </li>
+                <li class="tours__list-item">
+                  <img src="images/tours/mounts.jpg" alt="mounts" />
+                  <p>Mountain Holiday</p>
+                </li>
+                <li class="tours__list-item">
+                  <img src="images/tours/beach.jpg" alt="beach" />
+                  <p>Beach Holidays</p>
+                </li>
+              </ul>
+              <a href="#" class="tours__btn">Other Tours<span></span></a>
+            </div>
+          </section>
+          <!--   horizons   -->
+          <section class="horizons">
+            <div class="layout horizons__layout">
+              <div class="horizons__left">
+                <img src="images/horizons/img-sea.jpg" alt="image sea" />
+              </div>
+              <div class="horizons__right">
+                <h2 class="title horizons__title">Discover New Horizons</h2>
+                <!-- Tab links -->
+                <div class="tabs horizons__tabs">
+                  <button class="tablinks active" data-value="about">
+                    about us
+                  </button>
+                  <button class="tablinks" data-value="choose">
+                    why choose us
+                  </button>
+                  <button class="tablinks" data-value="mission">
+                    our mission
+                  </button>
+                </div>
+
+                <!-- Tab content -->
+                <div id="about" class="tabcontent active">
+                  <p class="tabcontent__descr text">
+                    Wonder Tour is committed to bringing our clients the best in
+                    value and quality travel arrangements. We are passionate
+                    about travel and sharing the world's wonders with you.
+                  </p>
+                  <div class="tabcontent__btns">
+                    <a href="#">Get in Touch</a>
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+
+                <div id="choose" class="tabcontent">
+                  <p class="tabcontent__descr text">
+                    We are proud to offer excellent quality and value for money
+                    in our tours, which give you the chance to experience your
+                    chosen destination in an authentic and exciting way.
+                  </p>
+                  <div class="tabcontent__btns">
+                    <a href="#">Get in Touch</a>
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+
+                <div id="mission" class="tabcontent">
+                  <p class="tabcontent__descr text">
+                    Our mission is to provide the ultimate travel planning
+                    experience while becoming a one-stop shop for every travel
+                    service available in the industry.
+                  </p>
+                  <div class="tabcontent__btns">
+                    <a href="#">Get in Touch</a>
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--   Services   -->
+          <section class="service">
+            <div class="layout service__layout">
+              <h2 class="title service__title">Our Services</h2>
+              <!-- list -->
+              <ul class="service__list">
+                <li class="service__item">
+                  <div class="service__item-left">
+                    <i class="fas fa-headset"></i>
+                  </div>
+                  <div class="service__item-right">
+                    <h3 class="subtitle service__item-subtitle">
+                      <a href="#">Personalized Matching</a>
+                    </h3>
+                    <p class="service__item-text text">
+                      Our unique matching system lets you find just the tour you
+                      want for your next holiday.
+                    </p>
+                  </div>
+                </li>
+                <li class="service__item">
+                  <div class="service__item-left">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="service__item-right">
+                    <h3 class="subtitle service__item-subtitle">
+                      <a href="#">Wide Variety of Tours</a>
+                    </h3>
+                    <p class="service__item-text text">
+                      We offer a wide variety of personally picked tours with
+                      destinations all over the globe.
+                    </p>
+                  </div>
+                </li>
+                <li class="service__item">
+                  <div class="service__item-left">
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="service__item-right">
+                    <h3 class="subtitle service__item-subtitle">
+                      <a href="#">Highly Qualified Service</a>
+                    </h3>
+                    <p class="service__item-text text">
+                      Our tour managers are qualified, skilled, and friendly to
+                      bring you the best service
+                    </p>
+                  </div>
+                </li>
+                <li class="service__item">
+                  <div class="service__item-left">
+                    <i class="fas fa-sliders-h"></i>
+                  </div>
+                  <div class="service__item-right">
+                    <h3 class="subtitle service__item-subtitle">
+                      <a href="#">24/7 Support</a>
+                    </h3>
+                    <p class="service__item-text text">
+                      You can always get professional support from our staff
+                      24/7 and ask any question you have.
+                    </p>
+                  </div>
+                </li>
+                <li class="service__item">
+                  <div class="service__item-left">
+                    <i class="fas fa-fire-alt"></i>
+                  </div>
+                  <div class="service__item-right">
+                    <h3 class="subtitle service__item-subtitle">
+                      <a href="#">Handpicked Hotels</a>
+                    </h3>
+                    <p class="service__item-text text">
+                      Our team offers only the best selection of affordable and
+                      luxury hotels to our clients.
+                    </p>
+                  </div>
+                </li>
+                <li class="service__item">
+                  <div class="service__item-left">
+                    <i class="fas fa-wallet"></i>
+                  </div>
+                  <div class="service__item-right">
+                    <h3 class="subtitle service__item-subtitle">
+                      <a href="#">Best Price Guarantee</a>
+                    </h3>
+                    <p class="service__item-text text">
+                      If you find tours that are cheaper than ours, we will
+                      compensate the difference.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!--    Hot Tours     -->
+          <section class="hot-tours">
+            <div class="layout hot-tours__layout">
+              <h2 class="title hot-tours__title">Hot Tours</h2>
+              <ul class="hot-tours__list">
+                <li class="hot-tours__item">
+                  <div class="hot-tours__item-left">
+                    <img src="images/product1.jpg" alt="" />
+                  </div>
+                  <div class="hot-tours__item-right">
+                    <h3 class="subtitle hot-tours__subtitle">
+                      <a href="#">Benidorm, Spain</a>
+                    </h3>
+                    <div class="hot-tours__row">
+                      <div class="hot-tours__rating">
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                      </div>
+                      <a href="#">4 customer reviews</a>
+                    </div>
+                    <p class="hot-tours__text text">
+                      Benidorm is a buzzing resort with a big reputation for
+                      beach holidays. Situated in sunny Costa Blanca, the town
+                      is one of the original Spanish beach resorts...
+                    </p>
+                    <button class="btn hot-tours__btn">Buy This Tour</button>
+                    <div class="hot-tours__price"><span>$790</span></div>
+                  </div>
+                </li>
+                <li class="hot-tours__item">
+                  <div class="hot-tours__item-left">
+                    <img src="images/product2.jpg" alt="" />
+                  </div>
+                  <div class="hot-tours__item-right">
+                    <h3 class="subtitle hot-tours__subtitle">
+                      <a href="#">Benidorm, Spain</a>
+                    </h3>
+                    <div class="hot-tours__row">
+                      <div class="hot-tours__rating">
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                      </div>
+                      <a href="#">4 customer reviews</a>
+                    </div>
+                    <p class="hot-tours__text text">
+                      Benidorm is a buzzing resort with a big reputation for
+                      beach holidays. Situated in sunny Costa Blanca, the town
+                      is one of the original Spanish beach resorts...
+                    </p>
+                    <button class="btn hot-tours__btn">Buy This Tour</button>
+                    <div class="hot-tours__price"><span>$890</span></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!--    Our Team    -->
+          <section class="our-team">
+            <div class="layout our-team__layout">
+              <h2 class="our-team__title title">
+                Different People — One Mission
+              </h2>
+
+              <ul class="our-team__list">
+                <li class="our-team__item">
+                  <div class="our-team__item-ava">
+                    <img src="images/user1.jpg" alt="" />
+                  </div>
+                  <div class="our-team__item-descr">
+                    <h3 class="our-team__name">
+                      <a href="#">Diana Robinson</a>
+                    </h3>
+                    <p class="our-team__position">Founder, Owner</p>
+                    <a href="tel:+13239134688" class="our-team__phone"
+                      >+1 323-913-4688</a
+                    >
+                  </div>
+                </li>
+                <li class="our-team__item">
+                  <div class="our-team__item-ava">
+                    <img src="images/user2.jpg" alt="" />
+                  </div>
+                  <div class="our-team__item-descr">
+                    <h3 class="our-team__name">
+                      <a href="#">Peter McMillan</a>
+                    </h3>
+                    <p class="our-team__position">Travel Agent</p>
+                    <a href="tel:+13239134688" class="our-team__phone"
+                      >+1 323-913-4688</a
+                    >
+                  </div>
+                </li>
+                <li class="our-team__item">
+                  <div class="our-team__item-ava">
+                    <img src="images/user3.jpg" alt="" />
+                  </div>
+                  <div class="our-team__item-descr">
+                    <h3 class="our-team__name">
+                      <a href="#">Jill Peterson</a>
+                    </h3>
+                    <p class="our-team__position">Tour Consultant</p>
+                    <a href="tel:+13239134688" class="our-team__phone"
+                      >+1 323-913-4688</a
+                    >
+                  </div>
+                </li>
+                <li class="our-team__item">
+                  <div class="our-team__item-ava">
+                    <img src="images/user4.jpg" alt="" />
+                  </div>
+                  <div class="our-team__item-descr">
+                    <h3 class="our-team__name"><a href="#">James Smith</a></h3>
+                    <p class="our-team__position">PR Manager</p>
+                    <a href="tel:+13239134688" class="our-team__phone"
+                      >+1 323-913-4688</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!--    Booking    -->
+          <section class="booking">
+            <div class="booking__layout layout">
+              <div class="booking__container">
+                <h3 class="booking__title">
+                  First-class Impressions are Waiting for You!
+                </h3>
+                <p class="booking__text">
+                  Our agency offers travelers various tours and excursions with
+                  destinations all over the world. Browse our website to find
+                  your dream tour!
+                </p>
+                <button class="booking__btn">Book A Tour Now</button>
+              </div>
+            </div>
+          </section>
+          <!--    Gallery    -->
+          <section class="gallery">
+            <h2 class="gallery__title">Gallery</h2>
+            <!--    Gallery Swiper    -->
+            <div class="gallery__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/gallery/image1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/gallery/image2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/gallery/image3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/gallery/image4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/gallery/image5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/gallery/image6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/gallery/image7.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/gallery/image1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/gallery/image2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/gallery/image3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/gallery/image4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/gallery/image5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/gallery/image6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/gallery/image7.jpg" />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <section class="footer-info">
+          <div class="footer-info__layout layout">
+            <div class="footer-info__left">
+              <h3 class="footer-info__title">contact us</h3>
+              <ul class="footer-info__contact">
+                <li class="footer-info__contact-item">
+                  <a href="tel:+13239134688"
+                    ><i class="fa-regular fa-phone"></i>+1 323-913-4688</a
+                  >
+                </li>
+                <li class="footer-info__contact-item">
+                  <a href="mailto:info@demolink.org"
+                    ><i class="fa-regular fa-envelope"></i>info@demolink.org</a
+                  >
+                </li>
+                <li class="footer-info__contact-item">
+                  <a href="#"
+                    ><i class="fa-regular fa-paper-plane"></i>4730 Crystal
+                    Springs Dr, Los Angeles, CA 90027</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-info__middle">
+              <h3 class="footer-info__title">popular news</h3>
+              <ul class="footer-info__news">
+                <li class="footer-info__news-item">
+                  <a href="#"
+                    >Your Personal Guide to 5 Best Places to Visit on Earth</a
+                  >
+                  <p class="footer-info__date">May 04, 2019</p>
+                </li>
+                <li class="footer-info__news-item">
+                  <a href="#"
+                    >Top 10 Hotels: Rating by Wonder Tour Travel Experts</a
+                  >
+                  <p class="footer-info__date">May 04, 2019</p>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-info__right">
+              <h3 class="footer-info__title">quick links</h3>
+              <ul class="footer-info__links">
+                <li class="footer-info__link"><a href="#">about us</a></li>
+                <li class="footer-info__link"><a href="#">our tours</a></li>
+                <li class="footer-info__link"><a href="#">our team</a></li>
+                <li class="footer-info__link"><a href="#">gallery</a></li>
+                <li class="footer-info__link"><a href="#">blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="footer-copy">
+          <div class="footer-copy__layout layout">
+            <p>
+              © 2023 Wonder Tour. All Rights Reserved. Design by TemplateMonster
+            </p>
+            <ul class="footer-copy__socials socials">
+              <li class="footer-copy__socials-item socials-item">
+                <a href="#" class="footer-copy__link link"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </li>
+              <li class="footer-copy__socials-item socials-item">
+                <a href="#" class="footer-copy__link link"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li class="footer-copy__socials-item socials-item">
+                <a href="#" class="footer-copy__link link"
+                  ><i class="fa-brands fa-google-plus-g"></i
+                ></a>
+              </li>
+              <li class="footer-copy__socials-item socials-item">
+                <a href="#" class="footer-copy__link link"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+            <p>Privacy Policy</p>
+          </div>
+        </section>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/slider-fv.js"></script>
+    <script src="js/gallery-swiper.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+.booking {
+  background-image: url(./../images/booking-bg.jpg);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 120px 0 160px 0;
+  }
+  &__title {
+    font-size: 48px;
+    line-height: 1.2;
+    color: $white;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  &__text {
+    font-size: 14px;
+    color: $white;
+    letter-spacing: 0.075em;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+  &__btn {
+    position: relative;
+    overflow: visible;
+    padding: 14px 35px 15px;
+    border: none;
+    z-index: 1;
+    color: $white;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-family: inherit;
+    font-size: 18px;
+    background: $mainColor;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+    &:hover {
+      background: transparent;
+      border: 2px solid $white;
+    }
+  }
+}

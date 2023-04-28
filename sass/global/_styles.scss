@@ -1,0 +1,104 @@
+#wrapper,
+main,
+#content,
+#sidebar,
+aside,
+section {
+  @include box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif, Arial, sans-serif;
+}
+
+.layout {
+  @include box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  @media (max-width: 1023px) {
+    font-size: 30px;
+  }
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.subtitle {
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+.subtitle a {
+  color: inherit;
+}
+.subtitle:hover a {
+  color: $mainColor;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid $mainColor;
+  padding: 12px 23px;
+  color: $black;
+  background: transparent;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  overflow: hidden;
+  &:hover {
+    color: $white;
+    transition: all 0.3s;
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+    transition: all 0.3s;
+  }
+  &:hover:before {
+    width: 101%;
+    z-index: -1;
+    background-color: $mainColor;
+    transition: all 0.3s;
+  }
+}
+
+.text {
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  color: #9b9b9b;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  &-item {
+    padding: 0 10px;
+    i {
+      font-size: 18px;
+      color: $white;
+      transition: all 0.3s;
+      &:hover {
+        color: $mainColor;
+      }
+    }
+  }
+}

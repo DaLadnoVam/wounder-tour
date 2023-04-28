@@ -1,0 +1,105 @@
+.our-team {
+  &__layout {
+    margin-bottom: 50px;
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1150px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__item {
+    position: relative;
+    text-align: center;
+    width: 270px;
+    @media (max-width: 1150px) {
+      max-width: 450px;
+      margin: 10px;
+    }
+    &:hover img {
+      top: -5px;
+      border-style: inset;
+      border: 5px solid $mainColor;
+      transition: all 0.3s ease-in-out;
+    }
+    &-ava {
+      margin: 0 auto;
+      padding: 12px 0 32px 0;
+      background: #f7f7f7;
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background: $white;
+        position: absolute;
+        top: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100px;
+        background: $white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+      img {
+        display: block;
+        width: 118px;
+        height: 118px;
+        border-radius: 50%;
+        position: relative;
+        z-index: 3;
+        margin: 0 auto;
+        border-style: inset;
+        border: 5px solid transparent;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    &-descr {
+      padding: 7px 14px 48px;
+      background: #f7f7f7;
+    }
+  }
+  &__name {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    a {
+      color: inherit;
+    }
+    &:hover a {
+      color: $mainColor;
+    }
+  }
+  &__position {
+    color: $mainColor;
+    letter-spacing: 0.025em;
+    line-height: 1.7;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  &__phone {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: inherit;
+    &:hover {
+      color: $mainColor;
+    }
+  }
+}

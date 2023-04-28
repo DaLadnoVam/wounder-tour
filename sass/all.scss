@@ -1,0 +1,20 @@
+@import "global/reset.scss";
+@import "global/mixins.scss";
+@import "global/var.scss";
+@import "global/styles.scss";
+
+@import "partials/header.scss";
+@import "partials/slider-fv.scss";
+@import "partials/tours.scss";
+@import "partials/horizons.scss";
+@import "partials/services.scss";
+@import "partials/hot-tours.scss";
+@import "partials/our-team.scss";
+@import "partials/booking.scss";
+@import "partials/gallery.scss";
+@import "partials/footer.scss";
+
+@import "../scss/fontawesome.scss";
+
+@import "../scss/solid.scss";
+@import "../scss/brands.scss";

@@ -1,0 +1,132 @@
+.footer {
+  @include box;
+  &-info {
+    background: #162e44;
+    padding: 75px 0 65px 0;
+    @media (max-width: 1023px) {
+      padding: 40px 0 30px 0;
+    }
+    &__layout {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 1023px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+    }
+    &__title {
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $white;
+      margin-bottom: 30px;
+      @media (max-width: 1023px) {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    }
+    &__left {
+      @media (max-width: 1023px) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    &__contact {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      @media (max-width: 1023px) {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      &-item {
+        display: flex;
+        margin-bottom: 20px;
+        @media (max-width: 1023px) {
+          margin: 0 10px 10px 10px;
+        }
+        a {
+          font-size: 16px;
+          line-height: 1.72;
+          color: $white;
+          &:hover {
+            color: $mainColor;
+          }
+          i {
+            font-size: 24px;
+            color: $mainColor;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+    &__middle {
+      @media (max-width: 1023px) {
+        margin: 0 10px 0 10px;
+      }
+    }
+    &__news {
+      display: flex;
+      flex-direction: column;
+      width: 220px;
+      &-item {
+        margin-bottom: 20px;
+        a {
+          color: $mainColor;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    &__date {
+      margin-top: 10px;
+      color: grey;
+    }
+    &__right {
+      @media (max-width: 1023px) {
+        margin: 0 10px 0 10px;
+      }
+    }
+    &__likns {
+      display: flex;
+      flex-direction: column;
+    }
+    &__link {
+      list-style-type: disc;
+      color: $mainColor;
+      margin-bottom: 20px;
+      a {
+        color: $white;
+        &:hover {
+          color: $mainColor;
+        }
+      }
+    }
+  }
+  &-copy {
+    padding: 30px 0;
+    background: #11263a;
+    &__layout {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+      p {
+        max-width: 320px;
+        color: #9b9b9b;
+        @media (max-width: 768px) {
+          text-align: center;
+          margin: 0 0 20px 0;
+        }
+      }
+    }
+    &__socials {
+      @media (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
