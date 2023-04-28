@@ -244,6 +244,15 @@ body {
   box-sizing: border-box;
   height: auto;
 }
+@media (max-width: 850px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 12;
+  }
+}
 .header__top {
   width: 100%;
   height: auto;
@@ -362,6 +371,7 @@ body {
     top: 60px;
     opacity: 1;
     visibility: visible;
+    z-index: 10;
   }
   .header__list-item:not(:last-child) {
     margin: 0 0 20px 0;
@@ -395,6 +405,7 @@ body {
 .header__nav {
   background: rgb(18, 18, 18);
   position: relative;
+  z-index: 20;
 }
 @media (max-width: 850px) {
   .header__nav {
@@ -411,6 +422,7 @@ body {
   }
 }
 .header__nav.show-nav {
+  z-index: 10;
   left: 0;
 }
 @media (max-width: 850px) {
@@ -511,7 +523,7 @@ body {
 }
 @media (max-width: 768px) {
   .fv-swiper {
-    max-height: 90vh;
+    max-height: 80vh;
   }
 }
 .fv-swiper-slide img {
