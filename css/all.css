@@ -530,7 +530,7 @@ body {
 }
 @media (max-width: 768px) {
   .fv-swiper {
-    min-height: 70vh;
+    height: 100%;
   }
 }
 .fv-swiper-slide img {
