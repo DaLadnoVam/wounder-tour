@@ -10,8 +10,17 @@ const swiper1 = new Swiper(".fv-swiper", {
   },
   navigation: false,
   scrollbar: false,
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
+  breakpoints: {
+    // when window width is >= 320px
+    310: {
+      noSwiping: true,
+    },
+    768: {
+      noSwiping: false,
+    },
   },
+  // If we need pagination
+  // pagination: {
+  //   el: ".swiper-pagination",
+  // },
 });

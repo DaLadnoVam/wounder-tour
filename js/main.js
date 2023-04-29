@@ -1,8 +1,22 @@
+// nav menu
+const itemsMenuEl = document.querySelectorAll(".header__menu-item");
+itemsMenuEl.forEach((item) => {
+  item.addEventListener("click", function (e) {
+    itemsMenuEl.forEach((item) => {
+      item.classList.remove("active");
+    });
+
+    e.currentTarget.classList.add("active");
+  });
+});
+
+console.log(itemsMenuEl);
+
 // kebab
 const kebabEl = document.getElementById("kebab");
 const kebabMenu = document.querySelector(".header__list");
 
-kebabEl.addEventListener("click", function () {
+kebabEl.addEventListener("click", function (e) {
   kebabMenu.classList.toggle("show-kebab");
 });
 
