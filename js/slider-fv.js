@@ -13,10 +13,10 @@ const swiper1 = new Swiper(".fv-swiper", {
   breakpoints: {
     // when window width is >= 320px
     310: {
-      noSwiping: true,
+      allowTouchMove: false,
     },
     768: {
-      noSwiping: false,
+      allowTouchMove: true,
     },
   },
   // If we need pagination
